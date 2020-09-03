@@ -3,27 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1804852B24C5831E00BF60D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804852A24C5831E00BF60D9 /* AppDelegate.swift */; };
 		1804852D24C5831E00BF60D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804852C24C5831E00BF60D9 /* SceneDelegate.swift */; };
-		1804852F24C5831E00BF60D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804852E24C5831E00BF60D9 /* ViewController.swift */; };
 		1804853224C5831E00BF60D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1804853024C5831E00BF60D9 /* Main.storyboard */; };
 		1804853424C5832100BF60D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1804853324C5832100BF60D9 /* Assets.xcassets */; };
 		1804853724C5832100BF60D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1804853524C5832100BF60D9 /* LaunchScreen.storyboard */; };
+		1804853F24C586AE00BF60D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804853E24C586AE00BF60D9 /* HomeViewController.swift */; };
+		1804854124C586C800BF60D9 /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804854024C586C800BF60D9 /* ClassListViewController.swift */; };
+		1804854324C586F700BF60D9 /* TeacherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804854224C586F700BF60D9 /* TeacherListViewController.swift */; };
+		1804854524C5870900BF60D9 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804854424C5870900BF60D9 /* FriendsListViewController.swift */; };
+		1804854924C59C0700BF60D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804854824C59C0700BF60D9 /* TabBarController.swift */; };
+		180544A924C88C37003A90C5 /* choiceClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180544A824C88C37003A90C5 /* choiceClassListViewController.swift */; };
+		180544AB24C89397003A90C5 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180544AA24C89397003A90C5 /* Const.swift */; };
+		181EE75A24F8A5BA00F39AA5 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EE75924F8A5BA00F39AA5 /* ModalViewController.swift */; };
+		1844760024CDB077005086B1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184475FF24CDB077005086B1 /* Task.swift */; };
+		18479A0024DE66DD00F1E8EA /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */; };
+		1849AC6024ECADC300052801 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849AC5F24ECADC300052801 /* QuestionViewController.swift */; };
+		1849AC6224ECAEB400052801 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849AC6124ECAEB400052801 /* AnswerViewController.swift */; };
+		1849AC6424ECECA600052801 /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1849AC6324ECECA600052801 /* QuestionListViewController.swift */; };
+		185B747824D3D6600056C209 /* EvaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B747724D3D6600056C209 /* EvaViewController.swift */; };
+		1871EEF624C8059200EBA44D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EEF524C8059200EBA44D /* LoginViewController.swift */; };
+		1871EEF824C80D3600EBA44D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1871EEF724C80D3600EBA44D /* GoogleService-Info.plist */; };
+		1871EEFA24C83EF500EBA44D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */; };
+		18B6202524F4A22000250CAC /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */; };
+		18B6202624F4A22000250CAC /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */; };
+		18CF521024C967ED000FE606 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF520F24C967ED000FE606 /* PostData.swift */; };
+		18CF521324C975A1000FE606 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF521124C975A1000FE606 /* PostTableViewCell.swift */; };
+		18CF521424C975A1000FE606 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF521224C975A1000FE606 /* PostTableViewCell.xib */; };
+		18CF521624C9D69C000FE606 /* DetailClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF521524C9D69C000FE606 /* DetailClassViewController.swift */; };
+		18FE3A5524CBE7FA003C55B7 /* NewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3A5424CBE7FA003C55B7 /* NewClassViewController.swift */; };
+		3D9B82A4715E8977F8BAB945 /* Pods_MyCollege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD07F510FCE8B8E12F6B31D /* Pods_MyCollege.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1804852724C5831E00BF60D9 /* MyCollege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCollege.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1804852A24C5831E00BF60D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1804852C24C5831E00BF60D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1804852E24C5831E00BF60D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1804853124C5831E00BF60D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1804853324C5832100BF60D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1804853624C5832100BF60D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1804853824C5832100BF60D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1804853E24C586AE00BF60D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1804854024C586C800BF60D9 /* ClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
+		1804854224C586F700BF60D9 /* TeacherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListViewController.swift; sourceTree = "<group>"; };
+		1804854424C5870900BF60D9 /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		1804854824C59C0700BF60D9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		180544A824C88C37003A90C5 /* choiceClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceClassListViewController.swift; sourceTree = "<group>"; };
+		180544AA24C89397003A90C5 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		181EE75924F8A5BA00F39AA5 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		184475FF24CDB077005086B1 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		1849AC5F24ECADC300052801 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		1849AC6124ECAEB400052801 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		1849AC6324ECECA600052801 /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		185B747724D3D6600056C209 /* EvaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaViewController.swift; sourceTree = "<group>"; };
+		1871EEF524C8059200EBA44D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1871EEF724C80D3600EBA44D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		18CF520F24C967ED000FE606 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		18CF521124C975A1000FE606 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		18CF521224C975A1000FE606 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		18CF521524C9D69C000FE606 /* DetailClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailClassViewController.swift; sourceTree = "<group>"; };
+		18FE3A5424CBE7FA003C55B7 /* NewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassViewController.swift; sourceTree = "<group>"; };
+		203D5DCDD7F0CD5F499B3187 /* Pods-MyCollege.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCollege.release.xcconfig"; path = "Target Support Files/Pods-MyCollege/Pods-MyCollege.release.xcconfig"; sourceTree = "<group>"; };
+		4927B4E570FD7B7DA90C19BB /* Pods-MyCollege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCollege.debug.xcconfig"; path = "Target Support Files/Pods-MyCollege/Pods-MyCollege.debug.xcconfig"; sourceTree = "<group>"; };
+		5FD07F510FCE8B8E12F6B31D /* Pods_MyCollege.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCollege.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9B82A4715E8977F8BAB945 /* Pods_MyCollege.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +93,8 @@
 			children = (
 				1804852924C5831E00BF60D9 /* MyCollege */,
 				1804852824C5831E00BF60D9 /* Products */,
+				80922D4EAD122E5C591C0F1B /* Pods */,
+				CD1DCD7B0062153C7FCB9B00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +111,53 @@
 			children = (
 				1804852A24C5831E00BF60D9 /* AppDelegate.swift */,
 				1804852C24C5831E00BF60D9 /* SceneDelegate.swift */,
-				1804852E24C5831E00BF60D9 /* ViewController.swift */,
+				1871EEF524C8059200EBA44D /* LoginViewController.swift */,
+				1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */,
+				1804853E24C586AE00BF60D9 /* HomeViewController.swift */,
+				180544A824C88C37003A90C5 /* choiceClassListViewController.swift */,
+				1804854024C586C800BF60D9 /* ClassListViewController.swift */,
+				18CF521524C9D69C000FE606 /* DetailClassViewController.swift */,
+				184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */,
+				18FE3A5424CBE7FA003C55B7 /* NewClassViewController.swift */,
+				1804854224C586F700BF60D9 /* TeacherListViewController.swift */,
+				1804854424C5870900BF60D9 /* FriendsListViewController.swift */,
+				185B747724D3D6600056C209 /* EvaViewController.swift */,
+				1849AC5F24ECADC300052801 /* QuestionViewController.swift */,
+				1849AC6324ECECA600052801 /* QuestionListViewController.swift */,
+				1849AC6124ECAEB400052801 /* AnswerViewController.swift */,
+				181EE75924F8A5BA00F39AA5 /* ModalViewController.swift */,
 				1804853024C5831E00BF60D9 /* Main.storyboard */,
+				1804854824C59C0700BF60D9 /* TabBarController.swift */,
+				180544AA24C89397003A90C5 /* Const.swift */,
+				184475FF24CDB077005086B1 /* Task.swift */,
+				18CF520F24C967ED000FE606 /* PostData.swift */,
+				18CF521124C975A1000FE606 /* PostTableViewCell.swift */,
+				18CF521224C975A1000FE606 /* PostTableViewCell.xib */,
+				18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */,
+				18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */,
 				1804853324C5832100BF60D9 /* Assets.xcassets */,
 				1804853524C5832100BF60D9 /* LaunchScreen.storyboard */,
 				1804853824C5832100BF60D9 /* Info.plist */,
+				1871EEF724C80D3600EBA44D /* GoogleService-Info.plist */,
 			);
 			path = MyCollege;
+			sourceTree = "<group>";
+		};
+		80922D4EAD122E5C591C0F1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4927B4E570FD7B7DA90C19BB /* Pods-MyCollege.debug.xcconfig */,
+				203D5DCDD7F0CD5F499B3187 /* Pods-MyCollege.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD1DCD7B0062153C7FCB9B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FD07F510FCE8B8E12F6B31D /* Pods_MyCollege.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1804853B24C5832100BF60D9 /* Build configuration list for PBXNativeTarget "MyCollege" */;
 			buildPhases = (
+				2A764C7774C0907F138DA012 /* [CP] Check Pods Manifest.lock */,
 				1804852324C5831E00BF60D9 /* Sources */,
 				1804852424C5831E00BF60D9 /* Frameworks */,
 				1804852524C5831E00BF60D9 /* Resources */,
+				06BDEEFCD7BB2D971FA6E6CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1804853724C5832100BF60D9 /* LaunchScreen.storyboard in Resources */,
+				18CF521424C975A1000FE606 /* PostTableViewCell.xib in Resources */,
+				1871EEF824C80D3600EBA44D /* GoogleService-Info.plist in Resources */,
+				18B6202624F4A22000250CAC /* QuestionTableViewCell.xib in Resources */,
 				1804853424C5832100BF60D9 /* Assets.xcassets in Resources */,
 				1804853224C5831E00BF60D9 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +231,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06BDEEFCD7BB2D971FA6E6CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCollege/Pods-MyCollege-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCollege/Pods-MyCollege-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCollege/Pods-MyCollege-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A764C7774C0907F138DA012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCollege-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1804852324C5831E00BF60D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1804852F24C5831E00BF60D9 /* ViewController.swift in Sources */,
+				1849AC6024ECADC300052801 /* QuestionViewController.swift in Sources */,
+				1804854124C586C800BF60D9 /* ClassListViewController.swift in Sources */,
+				18CF521024C967ED000FE606 /* PostData.swift in Sources */,
+				18CF521324C975A1000FE606 /* PostTableViewCell.swift in Sources */,
+				1804854324C586F700BF60D9 /* TeacherListViewController.swift in Sources */,
+				1849AC6424ECECA600052801 /* QuestionListViewController.swift in Sources */,
+				18FE3A5524CBE7FA003C55B7 /* NewClassViewController.swift in Sources */,
+				18CF521624C9D69C000FE606 /* DetailClassViewController.swift in Sources */,
+				180544A924C88C37003A90C5 /* choiceClassListViewController.swift in Sources */,
+				1804854524C5870900BF60D9 /* FriendsListViewController.swift in Sources */,
+				181EE75A24F8A5BA00F39AA5 /* ModalViewController.swift in Sources */,
+				1844760024CDB077005086B1 /* Task.swift in Sources */,
+				18B6202524F4A22000250CAC /* QuestionTableViewCell.swift in Sources */,
 				1804852B24C5831E00BF60D9 /* AppDelegate.swift in Sources */,
+				1871EEF624C8059200EBA44D /* LoginViewController.swift in Sources */,
+				1849AC6224ECAEB400052801 /* AnswerViewController.swift in Sources */,
+				1804854924C59C0700BF60D9 /* TabBarController.swift in Sources */,
+				1871EEFA24C83EF500EBA44D /* CreateAccountViewController.swift in Sources */,
 				1804852D24C5831E00BF60D9 /* SceneDelegate.swift in Sources */,
+				18479A0024DE66DD00F1E8EA /* PostImageViewController.swift in Sources */,
+				1804853F24C586AE00BF60D9 /* HomeViewController.swift in Sources */,
+				185B747824D3D6600056C209 /* EvaViewController.swift in Sources */,
+				180544AB24C89397003A90C5 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +442,7 @@
 		};
 		1804853C24C5832100BF60D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4927B4E570FD7B7DA90C19BB /* Pods-MyCollege.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +455,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.Leon.ryotaro.tsuji.MyCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1804853D24C5832100BF60D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203D5DCDD7F0CD5F499B3187 /* Pods-MyCollege.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.Leon.ryotaro.tsuji.MyCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

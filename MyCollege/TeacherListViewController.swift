@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TeacherListViewController.swift
 //  MyCollege
 //
 //  Created by Apple on 2020/07/20.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TeacherListViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
+   
 }
-
