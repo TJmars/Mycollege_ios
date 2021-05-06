@@ -19,9 +19,10 @@ class QuestionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        contentLabel.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.2)
+        contentLabel.backgroundColor = .clear
         contentLabel.layer.cornerRadius = 10.0
         contentLabel.clipsToBounds = true
+        contentLabel.numberOfLines = 0
         
     }
 
@@ -31,6 +32,7 @@ class QuestionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+   
    
     
     

@@ -9,9 +9,12 @@
 import UIKit
 import Firebase
 import FirebaseUI
+import RealmSwift
 
 class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
+    let realm = try! Realm()
+    var loginApp:LoginApp!
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -22,10 +25,18 @@ class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectio
     var indexNum = 0
     var checkSegue = 0
     var imageArray:[UIImage] = []
+    var uuidTime = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let obj = realm.objects(LoginApp.self).first {
+            loginApp = obj
+            
+        } else {
+            loginApp = LoginApp()
+        }
         
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
@@ -36,7 +47,7 @@ class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectio
         
         let storage = Storage.storage()
         if checkSegue == 0 {
-            let storageReference = storage.reference().child(Const.ImagePath).child(documentID + ".jpg").child("\(childNum)")
+            let storageReference = storage.reference().child(self.loginApp.collegeNameData).child(Const.ImagePath).child(documentID + ".jpg").child("\(uuidTime)")
             storageReference.listAll { (result, error) in
                 if let error = error {
                     // ...
@@ -45,7 +56,7 @@ class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectio
                 
                 for (count, item) in result.items.enumerated() {
                     
-                    let imageRef = storage.reference().child(Const.ImagePath).child(self.documentID + ".jpg").child("\(self.childNum)").child("image\(count)")
+                    let imageRef = storage.reference().child(self.loginApp.collegeNameData).child(Const.ImagePath).child(self.documentID + ".jpg").child("\(self.uuidTime)").child("image\(count)")
                     imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
                         
                         if let error = error {
@@ -57,13 +68,13 @@ class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectio
                             self.collectionView.reloadData()
                         }
                     }
-                    
+                   
                 }
                 
                 
             }
         } else {
-            let storageReference = storage.reference().child(Const.ImagePath).child(documentID + ".jpg").child("\(childNum)").child("answer\(indexNum)")
+            let storageReference = storage.reference().child(self.loginApp.collegeNameData).child(Const.ImagePath).child(documentID + ".jpg").child("\(uuidTime)").child("answer\(indexNum)")
             storageReference.listAll { (result, error) in
                 if let error = error {
                     // ...
@@ -71,7 +82,7 @@ class ModalViewController: UIViewController,UICollectionViewDelegate,UICollectio
                 
                 for (count, item) in result.items.enumerated() {
                     
-                    let imageRef = storage.reference().child(Const.ImagePath).child(self.documentID + ".jpg").child("\(self.childNum)").child("answer\(self.indexNum)").child("image\(count)")
+                    let imageRef = storage.reference().child(self.loginApp.collegeNameData).child(Const.ImagePath).child(self.documentID + ".jpg").child("\(self.uuidTime)").child("answer\(self.indexNum)").child("image\(count)")
                     imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
                         
                         if let error = error {

@@ -19,6 +19,8 @@
 		1804854924C59C0700BF60D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1804854824C59C0700BF60D9 /* TabBarController.swift */; };
 		180544A924C88C37003A90C5 /* choiceClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180544A824C88C37003A90C5 /* choiceClassListViewController.swift */; };
 		180544AB24C89397003A90C5 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180544AA24C89397003A90C5 /* Const.swift */; };
+		180D65062511AFCA000707A0 /* ClassTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D65052511AFCA000707A0 /* ClassTopViewController.swift */; };
+		181029E725070078003CF4FB /* MakeAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181029E625070078003CF4FB /* MakeAdViewController.swift */; };
 		181EE75A24F8A5BA00F39AA5 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181EE75924F8A5BA00F39AA5 /* ModalViewController.swift */; };
 		1844760024CDB077005086B1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184475FF24CDB077005086B1 /* Task.swift */; };
 		18479A0024DE66DD00F1E8EA /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */; };
@@ -31,6 +33,9 @@
 		1871EEFA24C83EF500EBA44D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */; };
 		18B6202524F4A22000250CAC /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */; };
 		18B6202624F4A22000250CAC /* QuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */; };
+		18C32F672531E80F00D672A0 /* smile.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C32F662531E80F00D672A0 /* smile.json */; };
+		18C32F6B2531F28D00D672A0 /* title.json in Resources */ = {isa = PBXBuildFile; fileRef = 18C32F6A2531F28C00D672A0 /* title.json */; };
+		18C5A458250E0C58003DCA4D /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A457250E0C58003DCA4D /* CircleViewController.swift */; };
 		18CF521024C967ED000FE606 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF520F24C967ED000FE606 /* PostData.swift */; };
 		18CF521324C975A1000FE606 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF521124C975A1000FE606 /* PostTableViewCell.swift */; };
 		18CF521424C975A1000FE606 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF521224C975A1000FE606 /* PostTableViewCell.xib */; };
@@ -54,6 +59,8 @@
 		1804854824C59C0700BF60D9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		180544A824C88C37003A90C5 /* choiceClassListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceClassListViewController.swift; sourceTree = "<group>"; };
 		180544AA24C89397003A90C5 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		180D65052511AFCA000707A0 /* ClassTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTopViewController.swift; sourceTree = "<group>"; };
+		181029E625070078003CF4FB /* MakeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAdViewController.swift; sourceTree = "<group>"; };
 		181EE75924F8A5BA00F39AA5 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		184475FF24CDB077005086B1 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +73,9 @@
 		1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionTableViewCell.xib; sourceTree = "<group>"; };
+		18C32F662531E80F00D672A0 /* smile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smile.json; sourceTree = "<group>"; };
+		18C32F6A2531F28C00D672A0 /* title.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = title.json; sourceTree = "<group>"; };
+		18C5A457250E0C58003DCA4D /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		18CF520F24C967ED000FE606 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		18CF521124C975A1000FE606 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		18CF521224C975A1000FE606 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -109,17 +119,20 @@
 		1804852924C5831E00BF60D9 /* MyCollege */ = {
 			isa = PBXGroup;
 			children = (
-				1804852A24C5831E00BF60D9 /* AppDelegate.swift */,
 				1804852C24C5831E00BF60D9 /* SceneDelegate.swift */,
+				1804852A24C5831E00BF60D9 /* AppDelegate.swift */,
 				1871EEF524C8059200EBA44D /* LoginViewController.swift */,
 				1871EEF924C83EF500EBA44D /* CreateAccountViewController.swift */,
 				1804853E24C586AE00BF60D9 /* HomeViewController.swift */,
 				180544A824C88C37003A90C5 /* choiceClassListViewController.swift */,
 				1804854024C586C800BF60D9 /* ClassListViewController.swift */,
 				18CF521524C9D69C000FE606 /* DetailClassViewController.swift */,
+				180D65052511AFCA000707A0 /* ClassTopViewController.swift */,
 				184799FF24DE66DD00F1E8EA /* PostImageViewController.swift */,
 				18FE3A5424CBE7FA003C55B7 /* NewClassViewController.swift */,
 				1804854224C586F700BF60D9 /* TeacherListViewController.swift */,
+				181029E625070078003CF4FB /* MakeAdViewController.swift */,
+				18C5A457250E0C58003DCA4D /* CircleViewController.swift */,
 				1804854424C5870900BF60D9 /* FriendsListViewController.swift */,
 				185B747724D3D6600056C209 /* EvaViewController.swift */,
 				1849AC5F24ECADC300052801 /* QuestionViewController.swift */,
@@ -135,6 +148,8 @@
 				18CF521224C975A1000FE606 /* PostTableViewCell.xib */,
 				18B6202324F4A22000250CAC /* QuestionTableViewCell.swift */,
 				18B6202424F4A22000250CAC /* QuestionTableViewCell.xib */,
+				18C32F662531E80F00D672A0 /* smile.json */,
+				18C32F6A2531F28C00D672A0 /* title.json */,
 				1804853324C5832100BF60D9 /* Assets.xcassets */,
 				1804853524C5832100BF60D9 /* LaunchScreen.storyboard */,
 				1804853824C5832100BF60D9 /* Info.plist */,
@@ -224,8 +239,10 @@
 				18CF521424C975A1000FE606 /* PostTableViewCell.xib in Resources */,
 				1871EEF824C80D3600EBA44D /* GoogleService-Info.plist in Resources */,
 				18B6202624F4A22000250CAC /* QuestionTableViewCell.xib in Resources */,
+				18C32F6B2531F28D00D672A0 /* title.json in Resources */,
 				1804853424C5832100BF60D9 /* Assets.xcassets in Resources */,
 				1804853224C5831E00BF60D9 /* Main.storyboard in Resources */,
+				18C32F672531E80F00D672A0 /* smile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +310,9 @@
 				18B6202524F4A22000250CAC /* QuestionTableViewCell.swift in Sources */,
 				1804852B24C5831E00BF60D9 /* AppDelegate.swift in Sources */,
 				1871EEF624C8059200EBA44D /* LoginViewController.swift in Sources */,
+				181029E725070078003CF4FB /* MakeAdViewController.swift in Sources */,
 				1849AC6224ECAEB400052801 /* AnswerViewController.swift in Sources */,
+				18C5A458250E0C58003DCA4D /* CircleViewController.swift in Sources */,
 				1804854924C59C0700BF60D9 /* TabBarController.swift in Sources */,
 				1871EEFA24C83EF500EBA44D /* CreateAccountViewController.swift in Sources */,
 				1804852D24C5831E00BF60D9 /* SceneDelegate.swift in Sources */,
@@ -301,6 +320,7 @@
 				1804853F24C586AE00BF60D9 /* HomeViewController.swift in Sources */,
 				185B747824D3D6600056C209 /* EvaViewController.swift in Sources */,
 				180544AB24C89397003A90C5 /* Const.swift in Sources */,
+				180D65062511AFCA000707A0 /* ClassTopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -430,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -448,10 +468,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ3PXRJDU7;
 				INFOPLIST_FILE = MyCollege/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.Leon.ryotaro.tsuji.MyCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -467,10 +489,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQ3PXRJDU7;
 				INFOPLIST_FILE = MyCollege/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.Leon.ryotaro.tsuji.MyCollege;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

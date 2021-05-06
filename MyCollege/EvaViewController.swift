@@ -15,6 +15,7 @@ class EvaViewController: UIViewController {
     //    Realm
     let realm = try! Realm()
     var task: Task!
+    var loginApp:LoginApp!
     
     var gradeValue = 0
     var levelValue = 0
@@ -30,6 +31,13 @@ class EvaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let obj = realm.objects(LoginApp.self).first {
+            loginApp = obj
+            
+        } else {
+            loginApp = LoginApp()
+        }
+        
         view.backgroundColor = UIColor(red: 0.5, green: 0.8, blue: 0.8, alpha: 1)
         
         // Do any additional setup after loading the view.
@@ -42,16 +50,22 @@ class EvaViewController: UIViewController {
     
     
     @IBAction func postButton(_ sender: Any) {
+        
+        try! realm.write {
+            self.task.registerCount = 0
+            self.realm.add(self.task, update: .modified)
+        }
+        
         if Auth.auth().currentUser != nil {
             //            ログイン済
             if listener == nil {
                 
                 // listener未登録なら、登録してスナップショットを受信する
-                let postsRef = Firestore.firestore().collection(Const.PostPath).document(task.documentID)
+                let postsRef = Firestore.firestore().collection(self.loginApp.collegeNameData).document(task.documentID)
                 switch gradeValue {
                 case 0:
                     postsRef.updateData([
-                        "gradeS": +1
+                        "gradeS": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -61,7 +75,7 @@ class EvaViewController: UIViewController {
                     }
                     case 1:
                     postsRef.updateData([
-                        "gradeA": +1
+                        "gradeA": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -71,7 +85,7 @@ class EvaViewController: UIViewController {
                     }
                     case 2:
                     postsRef.updateData([
-                        "gradeB": +1
+                        "gradeB": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -81,7 +95,7 @@ class EvaViewController: UIViewController {
                     }
                     case 3:
                     postsRef.updateData([
-                        "gradeC": +1
+                        "gradeC": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -91,7 +105,7 @@ class EvaViewController: UIViewController {
                     }
                     case 4:
                     postsRef.updateData([
-                        "gradeD": +1
+                        "gradeD": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -101,7 +115,7 @@ class EvaViewController: UIViewController {
                     }
                 default:
                     postsRef.updateData([
-                        "gradeS": +1
+                        "gradeS": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -114,7 +128,7 @@ class EvaViewController: UIViewController {
                 switch levelValue {
                 case 0:
                 postsRef.updateData([
-                    "level4": +1
+                    "level4": FieldValue.increment(Int64(1))
                 ]) { err in
                     if let err = err {
                         print("err:\(err)")
@@ -122,9 +136,9 @@ class EvaViewController: UIViewController {
                         print("ok")
                     }
                 }
-                    case 0:
+                    case 1:
                     postsRef.updateData([
-                        "level3": +1
+                        "level3": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -132,9 +146,9 @@ class EvaViewController: UIViewController {
                             print("ok")
                         }
                     }
-                    case 0:
+                    case 2:
                     postsRef.updateData([
-                        "level2": +1
+                        "level2": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -142,9 +156,9 @@ class EvaViewController: UIViewController {
                             print("ok")
                         }
                     }
-                    case 0:
+                    case 3:
                     postsRef.updateData([
-                        "level1": +1
+                        "level1": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -154,7 +168,7 @@ class EvaViewController: UIViewController {
                     }
                 default:
                     postsRef.updateData([
-                        "level1": +1
+                        "level1": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -168,7 +182,7 @@ class EvaViewController: UIViewController {
                 switch evaValue {
                 case 0:
                 postsRef.updateData([
-                    "evaA": +1
+                    "evaA": FieldValue.increment(Int64(1))
                 ]) { err in
                     if let err = err {
                         print("err:\(err)")
@@ -178,7 +192,7 @@ class EvaViewController: UIViewController {
                 }
                     case 1:
                     postsRef.updateData([
-                        "evaB": +1
+                        "evaB": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -188,7 +202,7 @@ class EvaViewController: UIViewController {
                     }
                     case 2:
                     postsRef.updateData([
-                        "evaC": +1
+                        "evaC": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -198,7 +212,7 @@ class EvaViewController: UIViewController {
                     }
                     case 3:
                     postsRef.updateData([
-                        "evaD": +1
+                        "evaD": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -208,7 +222,7 @@ class EvaViewController: UIViewController {
                     }
                 default:
                     postsRef.updateData([
-                        "evaA": +1
+                        "evaA": FieldValue.increment(Int64(1))
                     ]) { err in
                         if let err = err {
                             print("err:\(err)")
@@ -227,6 +241,7 @@ class EvaViewController: UIViewController {
                 
             }
         }
+        self.dismiss(animated: true, completion: nil)
     }
     
     

@@ -18,7 +18,7 @@ class FriendsListViewController: UIViewController,UITableViewDelegate, UITableVi
     //        Realm
            let realm = try! Realm()
            var task: Task!
-           var taskArray = try! Realm().objects(Task.self)
+    var taskArray = try! Realm().objects(Task.self).filter("registerCount == 1")
     
     override func viewDidLoad() {
         super.viewDidLoad()

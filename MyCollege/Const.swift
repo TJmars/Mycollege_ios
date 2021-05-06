@@ -8,8 +8,13 @@
 
 import Foundation
 
+
+
+
 struct Const {
    static let PostPath = "musashi"
    static let ImagePath = "images"
    static let QuestionPath = "question"
+   static let CirclePath = "circle"
+   static let FilePath = "file"
 }

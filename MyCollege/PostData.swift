@@ -17,6 +17,10 @@ class PostData: NSObject {
     var faculty: String?
     var teacher: String?
     var classRoom: String?
+    var evaRate: String?
+    var career: String?
+    var season: String?
+    var member: Int?
     var gradeS: Int?
     var gradeA: Int?
     var gradeB: Int?
@@ -43,6 +47,10 @@ class PostData: NSObject {
         self.faculty = postDic["faculty"] as? String
         self.teacher = postDic["teacher"] as? String
         self.classRoom = postDic["classRoom"] as? String
+        self.evaRate = postDic["evaRate"] as? String
+        self.career = postDic["career"] as? String
+        self.season = postDic["season"] as? String
+        self.member = postDic["member"] as? Int
         self.gradeS = postDic["gradeS"] as? Int
         self.gradeA = postDic["gradeA"] as? Int
         self.gradeB = postDic["gradeB"] as? Int
@@ -56,6 +64,7 @@ class PostData: NSObject {
         self.evaB = postDic["evaB"] as? Int
         self.evaC = postDic["evaC"] as? Int
         self.evaD = postDic["evaD"] as? Int
+        
         self.imageNum = postDic["imageNum"] as? Int
         
         

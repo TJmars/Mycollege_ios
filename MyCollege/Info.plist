@@ -15,11 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>画像投稿のため、カメラを使用します</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>端末に画像を保存します</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Send pictures from App</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -58,9 +64,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>端末に画像を保存します</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Send pictures from App</string>
 </dict>
 </plist>

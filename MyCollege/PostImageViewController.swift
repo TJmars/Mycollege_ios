@@ -15,12 +15,13 @@ class PostImageViewController: UIViewController {
     var documentID = ""
     var postData:PostData! = nil
     var imageNumData = 0
-    var questionCount = 0
+   
     var titleText = ""
     var contentText = ""
     var childNum = 0
     var answerText = ""
     var answerCount = 0
+    var uuidTime = ""
     
 //    0の時、questionViewControllerから、1の時answerViewControllerから
     var segueCount = 0
@@ -28,6 +29,8 @@ class PostImageViewController: UIViewController {
     
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var PButton: UIButton!
+    
     var imageArray:[UIImage] = []
     
     
@@ -38,7 +41,9 @@ class PostImageViewController: UIViewController {
         
         imageView.image = image
         
-        
+        PButton.backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.6)
+        PButton.layer.cornerRadius = 10
+        PButton.clipsToBounds = true
         
     }
     
@@ -69,72 +74,26 @@ class PostImageViewController: UIViewController {
         imageArray.append(image)
         
         if segueCount == 0 {
-            performSegue(withIdentifier: "returnQ", sender: nil)
+            let questionViewController = self.presentingViewController?.presentingViewController as! QuestionViewController
+           questionViewController.imageArray = imageArray
+
+            questionViewController.collectionView.reloadData()
+           self.dismiss(animated: true, completion: nil)
 
         } else {
-            performSegue(withIdentifier: "returnA", sender: nil)
+            let answerViewController = self.presentingViewController?.presentingViewController as! AnswerViewController
+            answerViewController.imageArray = imageArray
+
+            answerViewController.collectionView.reloadData()
+            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         }
-//        if Auth.auth().currentUser != nil {
-//
-//            //            let postsRef = Firestore.firestore().collection(Const.PostPath).document(documentID)
-//            //        画像をJPEG形式に変換
-//            let imageData = image.jpegData(compressionQuality: 0.75)
-//            //        画像の保存場所を定義
-//            let imageRef = Storage.storage().reference().child(Const.ImagePath).child(documentID + ".jpg").child("\(imageNumData)")
-//            print(imageNumData)
-//
-//            //        データをアップロード
-//            let metadata = StorageMetadata()
-//            metadata.contentType = "image/jpeg"
-//            imageRef.putData(imageData!, metadata: metadata) { (metadata, error) in
-//                if error != nil {
-//                    print(error!)
-//                    UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
-//                    return
-//                }
-//                UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
-//
-//                postsRef.updateData([
-//                    "imageNum": self.imageNumData + 1
-//
-//                ]) { err in
-//                    if let err = err {
-//                        print("err:\(err)")
-//                    } else {
-//                        print("ok")
-//
-//                    }
-//                }
-//
-//            }
-//
-//        }
+
     }
     
     @IBAction func returnButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "returnQ" {
-            let questionViewController:QuestionViewController = segue.destination as! QuestionViewController
-                   questionViewController.imageArray = imageArray
-                   questionViewController.documentID = documentID
-                   questionViewController.questionCount = questionCount
-                   questionViewController.titleText = titleText
-                   questionViewController.detaileText = contentText
-        } else {
-            let answerViewController:AnswerViewController = segue.destination as! AnswerViewController
-            answerViewController.imageArray = imageArray
-            answerViewController.documentID = documentID
-            answerViewController.childNum = childNum
-            answerViewController.titleText = titleText
-            answerViewController.contentText = contentText
-            answerViewController.answerCount = answerCount
-            answerViewController.answerText = answerText
-            
-        }
-    }
 }
 
 extension UIImage {
